@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honolulu Challenges</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mainMenu">
+
+        <h1>HONOLULU CHALLENGES</h1>
+
+        <p class="subtitle">Pick a Challenge</p>
+
+        <div class="buttonContainer">
+
+            <button id="coconutBtn" class="challengeButton">
+                Coconut Dance
+            </button>
+
+            <button id="wordSearchBtn" class="challengeButton">
+                Word Search
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- WORD SEARCH SCREEN -->
+    <div id="wordSearchScreen" class="hidden">
+
+        <!-- TOP BAR -->
+        <div class="topBar">
+
+            <button id="backBtn">
+                ← Main Menu
+            </button>
+
+            <div id="timer">
+                00:00.00
+            </div>
+
+        </div>
+
+        <!-- WORD FLASH -->
+        <div id="wordFlash" class="hidden">
+            PILIKIA
+        </div>
+
+        <!-- BOARD -->
+        <div id="boardContainer" class="hidden">
+
+            <div id="board"></div>
+
+        </div>
+
+    </div>
+
+    <!-- COMPLETED SCREEN -->
+        <div id="completeScreen" class="hidden">
+
+            <div class="completeCard">
+
+                <h2>WORD SEARCH COMPLETE</h2>
+
+                <div id="finalTime">
+                    00.00s
+                </div>
+
+                <p>Words Found: 5 / 5</p>
+
+                <p class="tapText">
+                    Returning to menu...
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- COCONUT DANCE SCREEN -->
+<div id="coconutScreen" class="hidden">
+
+    <div class="topBar">
+
+        <button id="coconutBackBtn">
+            ← Main Menu
+        </button>
+
+        <div id="coconutTimer">
+            00:00.00
+        </div>
+
+    </div>
+
+    <div id="coconutRound">
+        Round 1 / 15
+    </div>
+
+    <div id="penaltyText"></div>
+
+    <div id="coconutBoard"></div>
+
+</div>
+
+<!-- COCONUT COMPLETE -->
+<div id="coconutCompleteScreen" class="hidden">
+
+    <div class="completeCard">
+
+        <h2>COCONUT DANCE COMPLETE</h2>
+
+        <div id="coconutFinalTime">
+            00.00s
+        </div>
+
+        <p>Rounds Completed: 15 / 15</p>
+
+        <p class="tapText">
+            Returning to menu...
+        </p>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
