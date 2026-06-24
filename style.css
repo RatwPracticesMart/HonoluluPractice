@@ -148,7 +148,7 @@ body {
 }
 
 /* =========================
-   BOARD - 65% SIZE
+   BOARD - 65% SIZE (Desktop default)
 ========================= */
 
 #boardContainer {
@@ -180,7 +180,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(0.70rem, 2vw, 0.9rem);
+    font-size: clamp(0.80rem, 2.5vw, 1.5rem);
     font-weight: bold;
     cursor: pointer;
     user-select: none;
@@ -201,6 +201,78 @@ body {
     color: white;
 }
 
+/* =========================
+   RESPONSIVE - PHONES (35% BIGGER)
+========================= */
+
+@media screen and (max-width: 600px) {
+    #board {
+        width: 85%;  /* 65% + 20% = 85% (about 30% bigger) */
+        gap: 2px;
+        max-width: 450px;
+    }
+    
+    .cell {
+        font-size: clamp(0.7rem, 2.8vw, 1.2rem);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topBar {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        padding: 6px 10px;
+    }
+    
+    #boardContainer {
+        padding: 70px 5px 10px 5px;
+    }
+    
+    #board {
+        width: 90%;  /* Even bigger for small phones */
+        gap: 2px;
+        max-width: 380px;
+    }
+    
+    .cell {
+        font-size: clamp(0.65rem, 2.5vw, 1.1rem);
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #board {
+        width: 92%;
+        max-width: 320px;
+        gap: 1.5px;
+    }
+    
+    .cell {
+        font-size: clamp(0.6rem, 2.2vw, 1rem);
+        border-radius: 2px;
+    }
+}
+
+/* =========================
+   LANDSCAPE PHONES
+========================= */
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #boardContainer {
+        padding: 60px 5px 5px 5px;
+    }
+    
+    #board {
+        width: 70%;
+        max-width: 350px;
+        gap: 1.5px;
+    }
+    
+    .cell {
+        font-size: clamp(0.5rem, 2vw, 0.9rem);
+    }
+}
 /* =========================
    COMPLETE SCREEN
 ========================= */
