@@ -382,7 +382,7 @@ body {
 /* Phones */
 @media screen and (max-width: 600px) {
     #board {
-        width: 70%;
+        width: 80%;  /* ← CHANGED */
         max-width: 500px;
         gap: 2px;
     }
@@ -415,7 +415,7 @@ body {
     }
     
     #board {
-        width: 70%;
+        width: 80%;  /* ← CHANGED */
         max-width: 430px;
         gap: 2px;
     }
@@ -437,7 +437,7 @@ body {
 /* Tiny phones */
 @media screen and (max-width: 380px) {
     #board {
-        width: 70%;
+        width: 80%;  /* ← CHANGED */
         max-width: 350px;
         gap: 1.5px;
     }
