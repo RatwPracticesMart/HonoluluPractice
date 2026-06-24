@@ -493,7 +493,7 @@ function generateCoconutBoard() {
 
                     nextCoconutRound();
 
-                }, 350);
+                }, 700);
 
             } else {
 
