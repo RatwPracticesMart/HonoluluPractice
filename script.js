@@ -293,7 +293,7 @@ function checkWord() {
 
             startNextRound();
 
-        }, 500);
+        }, 700);
 
     }
 
