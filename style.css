@@ -376,19 +376,19 @@ body {
 }
 
 /* =========================
-   MOBILE RESPONSIVE - BIG BOARD
+   MOBILE RESPONSIVE - 70% BOARD
 ========================= */
 
 /* Phones */
 @media screen and (max-width: 600px) {
     #board {
-        width: 95%;
+        width: 70%;
         max-width: 500px;
         gap: 2px;
     }
     
     .cell {
-        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        font-size: clamp(0.8rem, 2.8vw, 1.2rem);
     }
     
     .coconutTile {
@@ -415,13 +415,13 @@ body {
     }
     
     #board {
-        width: 95%;
+        width: 70%;
         max-width: 430px;
         gap: 2px;
     }
     
     .cell {
-        font-size: clamp(0.8rem, 2.8vw, 1.2rem);
+        font-size: clamp(0.7rem, 2.5vw, 1.1rem);
     }
     
     .coconutTile {
@@ -437,13 +437,13 @@ body {
 /* Tiny phones */
 @media screen and (max-width: 380px) {
     #board {
-        width: 95%;
+        width: 70%;
         max-width: 350px;
         gap: 1.5px;
     }
     
     .cell {
-        font-size: clamp(0.7rem, 2.5vw, 1rem);
+        font-size: clamp(0.6rem, 2.2vw, 1rem);
         border-radius: 2px;
     }
     
@@ -467,7 +467,7 @@ body {
     }
     
     #board {
-        width: 70%;
+        width: 60%;
         max-width: 350px;
         gap: 1.5px;
     }
