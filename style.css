@@ -148,7 +148,7 @@ body {
 }
 
 /* =========================
-   BOARD - 65% SIZE
+   BOARD - DESKTOP DEFAULT (65%)
 ========================= */
 
 #boardContainer {
@@ -248,7 +248,7 @@ body {
 }
 
 /* =========================
-   COCONUT DANCE - 2X BIGGER, NO BACKGROUND
+   COCONUT DANCE
 ========================= */
 
 #coconutScreen {
@@ -288,24 +288,16 @@ body {
 
 .coconutTile {
     aspect-ratio: 1;
-
     background: #f3f3f3;
-
     border-radius: 12px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
-
     position: relative;
     overflow: hidden;
-
     touch-action: manipulation;
-
     min-height: 120px;
-
     transition: transform 0.1s ease;
 }
 
@@ -316,22 +308,16 @@ body {
 .coconutTile img {
     width: 85%;
     height: 85%;
-
     object-fit: contain;
-
     transition: filter 0.1s ease;
 }
 
 .coconutTile::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background: rgba(0,0,0,0);
-
     transition: background 0.1s ease;
-
     pointer-events: none;
 }
 
@@ -390,18 +376,19 @@ body {
 }
 
 /* =========================
-   RESPONSIVE - PHONES
+   MOBILE RESPONSIVE - BIG BOARD
 ========================= */
 
+/* Phones */
 @media screen and (max-width: 600px) {
     #board {
-        width: 65%;
-        gap: 1.5px;
-        max-width: 320px;
+        width: 95%;
+        max-width: 500px;
+        gap: 2px;
     }
     
     .cell {
-        font-size: clamp(0.35rem, 1.6vw, 0.7rem);
+        font-size: clamp(0.9rem, 3vw, 1.3rem);
     }
     
     .coconutTile {
@@ -410,10 +397,11 @@ body {
     
     #coconutBoard {
         gap: 8px;
-        max-width: 380px;
+        max-width: 400px;
     }
 }
 
+/* Small phones */
 @media screen and (max-width: 480px) {
     .topBar {
         top: 5px;
@@ -427,14 +415,13 @@ body {
     }
     
     #board {
-        width: 65%;
-        gap: 1.5px;
-        max-width: 280px;
+        width: 95%;
+        max-width: 430px;
+        gap: 2px;
     }
     
     .cell {
-        font-size: clamp(0.3rem, 1.4vw, 0.6rem);
-        border-radius: 2px;
+        font-size: clamp(0.8rem, 2.8vw, 1.2rem);
     }
     
     .coconutTile {
@@ -443,23 +430,20 @@ body {
     
     #coconutBoard {
         gap: 6px;
-        max-width: 320px;
+        max-width: 350px;
     }
 }
 
-/* =========================
-   RESPONSIVE - SMALL PHONES
-========================= */
-
+/* Tiny phones */
 @media screen and (max-width: 380px) {
     #board {
-        width: 90%;
-        max-width: 200px;
-        gap: 1px;
+        width: 95%;
+        max-width: 350px;
+        gap: 1.5px;
     }
     
     .cell {
-        font-size: clamp(0.25rem, 1.2vw, 0.5rem);
+        font-size: clamp(0.7rem, 2.5vw, 1rem);
         border-radius: 2px;
     }
     
@@ -469,7 +453,7 @@ body {
     
     #coconutBoard {
         gap: 4px;
-        max-width: 260px;
+        max-width: 300px;
     }
 }
 
@@ -483,19 +467,19 @@ body {
     }
     
     #board {
-        width: 60%;
-        max-width: 240px;
+        width: 70%;
+        max-width: 350px;
         gap: 1.5px;
     }
     
     .cell {
-        font-size: clamp(0.25rem, 1.2vw, 0.5rem);
+        font-size: clamp(0.5rem, 2vw, 0.9rem);
     }
     
     #coconutBoard {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        max-width: 320px;
+        max-width: 350px;
     }
     
     .coconutTile {
